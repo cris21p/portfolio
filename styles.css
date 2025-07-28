@@ -1,0 +1,124 @@
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body{
+    --cl-text--: #d7d4d4;
+    --cl-bg--: #181717;
+    --cl-bg-secondary--: #1d1c1c;
+    --text-font--: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-bar{
+    display: flex;
+    position: sticky;
+    width: 100%;
+    height: 60px;
+    top: -0px;
+    background-color: var(--cl-bg--);
+}
+
+.container-nav{
+    display: flex;
+    width: 90%;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: auto;
+}
+
+.nav{
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-link {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+
+.main {
+    height: 60vh;
+    padding: 20px;
+    color: var(--cl-text--);
+    background-color: var(--cl-bg-secondary--);
+}
+
+.container-fluid {
+    font-family: var(--text-font--);
+    font-style: italic;
+    max-width: 90%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.container-fluid h1 {
+    font-size: 2rem;
+}
+
+.container-fluid h2 {
+    font-size: 2rem;
+}
+
+.list-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+.list-icons a{
+    font-size: 30px;
+}
+
+.list-icons svg {
+    width: 21px;
+    height: 21px;
+}
+
+/* Section Styles */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--cl-bg--);
+    color: var(--cl-text--);
+    height: 230px;
+}
+
+.container-about {
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #007bff;
+}
