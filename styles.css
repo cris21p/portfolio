@@ -14,13 +14,18 @@ body{
     --text-font--: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/*-----------nav bar styles--------*/
+
 .nav-bar{
     display: flex;
     position: sticky;
+    padding: 10px 10px;
     width: 100%;
     height: 60px;
     top: -0px;
     background-color: var(--cl-bg--);
+    container-type: inline-size;
+    container-name: nav-bar;
 }
 
 .container-nav{
@@ -30,12 +35,13 @@ body{
     justify-content: center;
     align-items: center;
     align-self: center;
+    border: 1px solid #007bff;
     margin: auto;
 }
 
 .nav{
     display: flex;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -52,19 +58,42 @@ body{
     text-decoration: underline;
 }
 
-/* Main Content Styles */
+/*---------nav-bar end-----------*/
+
+
+/*------Container Nav-Bar-------*/
+
+
+@container nav-bar (min-width: 600px) {
+    .container-nav {
+        width: 43%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*------Container Nav-Bar End-------*/
+
+/*--------------Main Content Styles-----------*/
 
 .main {
     height: 60vh;
-    padding: 20px;
+    width: 100%;
+    padding: 33px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     color: var(--cl-text--);
     background-color: var(--cl-bg-secondary--);
+    container-type: inline-size;
+    container-name: main;
 }
 
 .container-fluid {
     font-family: var(--text-font--);
     font-style: italic;
-    max-width: 90%;
+    border: 1px solid #007bff;
+    width: 80%;
     height: 100%;
     margin: auto;
     justify-content: center;
@@ -76,11 +105,11 @@ body{
 }
 
 .container-fluid h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .container-fluid h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .list-icons {
@@ -100,7 +129,13 @@ body{
     height: 21px;
 }
 
+/*----------end main----------------*/
+
+/*---------container main---------*/
+
 /* Section Styles */
+
+
 .section {
     display: flex;
     flex-direction: column;
