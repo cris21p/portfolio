@@ -41,7 +41,7 @@ body{
 
 .nav{
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -66,7 +66,7 @@ body{
 
 @container nav-bar (min-width: 600px) {
     .container-nav {
-        width: 43%;
+        width: 60%;
         display: flex;
         justify-content: center;
     }
@@ -79,7 +79,7 @@ body{
 .main {
     height: 60vh;
     width: 100%;
-    padding: 33px;
+    padding: 20px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -89,30 +89,31 @@ body{
     container-name: main;
 }
 
-.container-fluid {
-    font-family: var(--text-font--);
-    font-style: italic;
-    border: 1px solid #007bff;
-    width: 80%;
-    height: 100%;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+.container-main {
     display: flex;
     flex-direction: column;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    font-style: italic;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--text-font--);
     text-align: center;
-    padding: 20px;
 }
 
-.container-fluid h1 {
+..container-main h1 {
+    width: auto;
     font-size: 2.2rem;
 }
 
-.container-fluid h2 {
+..container-main h2 {
+    width: auto;
     font-size: 2.2rem;
 }
 
 .list-icons {
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,6 +122,7 @@ body{
 }
 
 .list-icons a{
+    width: 30px;
     font-size: 30px;
 }
 
@@ -133,7 +135,18 @@ body{
 
 /*---------container main---------*/
 
-/* Section Styles */
+@container main (min-width: 700px) {
+    .container-main {
+        background-color: #007bff;
+        width: 62.2%;
+        height: 100%;
+        padding: 50px;
+    }
+}
+
+/*---------container main end---------*/
+
+/*--------Section Styles-------------*/
 
 
 .section {
@@ -146,10 +159,13 @@ body{
     background-color: var(--cl-bg--);
     color: var(--cl-text--);
     height: 230px;
+    container-type: inline-size;
+    container-name: section;
 }
 
 .container-about {
-    max-width: 90%;
+    width: 90%;
+    border: 1px solid #007bff;
     margin: auto;
     text-align: center;
 }
@@ -158,6 +174,15 @@ body{
     font-size: 1.5rem;
     margin-bottom: 30px;
     color: #007bff;
+}
+
+/*--------Section Styles End-------------*/
+/*-------container about--------*/
+
+@container section (min-width: 600px) {
+    .container-about {
+        width: 61%;
+    }
 }
 
 /* Projects Section Styles */
