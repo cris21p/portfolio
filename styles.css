@@ -11,6 +11,7 @@ body{
     --cl-text--: #d7d4d4;
     --cl-bg--: #181717;
     --cl-bg-secondary--: #1d1c1c;
+    --cl-text-secondary--: #007bff;
     --text-font--: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -188,6 +189,69 @@ body{
     }
 }
 
+/*-------container about end--------*/
+
+/*-------Skills section--------*/
+
+.section-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 1px #000;
+    width: 100%;
+    height: auto;
+    padding: 35px;
+    background-color: var(--cl-bg-secondary--);
+    color: var(--cl-text-secondary--);
+    container-type: inline-size;
+    container-name: section-skills;
+}
+
+.container-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.section-skills h3 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 20px #000;
+    border-radius: 40px;
+    align-items: center;
+    margin-top: 30px;
+    gap: 1rem;
+}
+
+.skills-list img{
+    width: 100%;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
 /* Projects Section Styles */
 
 
@@ -200,7 +264,7 @@ body{
     width: 100%;
     height: auto;
     padding: 35px;
-    background-color: var(--cl-bg-secondary--);
+    background-color: var(--cl-bg--);
     color: var(--cl-text--);
     container-type: inline-size;
     container-name: section-projects;
