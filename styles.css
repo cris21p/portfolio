@@ -250,7 +250,6 @@ body{
     justify-content: center;
     width: 110%;
     height: 90%;
-    border: 1px solid #000;
     text-align: center;
 }
 
@@ -263,7 +262,6 @@ body{
 
 .skills-content {
     display: flex;
-    border: 1px solid #000;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
@@ -287,7 +285,7 @@ body{
 .skills-content p{
     font-size: 1.2rem;
     font-weight: bold;
-    color: #7a7979;
+    color: #6a6a6a;
     margin: 0;
 }
 
