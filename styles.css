@@ -41,11 +41,12 @@ body{
 .logo {
     display: flex;
     direction: ltr;
-    width: 40%;
+    width: 30%;
     height: 100%;
     align-items: center;
     justify-content: center;
     text-align: center;
+    border: 1px solid #000;
     font-size: clamp(0.8rem, 2vw, 1rem);
     color: #b6ded6d8;
 }
@@ -60,6 +61,7 @@ body{
 .nav{
     display: flex;
     direction: rtl;
+    border: 1px solid #000;
     width: 70%;
     height: 100%;
     font-size: clamp(0.8rem, 2vw, 1rem);
@@ -285,7 +287,7 @@ body{
 .skills-content p{
     font-size: 1.2rem;
     font-weight: bold;
-    color: #00000096;
+    color: #00000069;
     margin: 0;
 }
 
