@@ -46,7 +46,6 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 1px solid #000;
     font-size: clamp(0.8rem, 2vw, 1rem);
     color: #b6ded6d8;
 }
@@ -61,7 +60,6 @@ body{
 .nav{
     display: flex;
     direction: rtl;
-    border: 1px solid #000;
     width: 70%;
     height: 100%;
     font-size: clamp(0.8rem, 2vw, 1rem);
@@ -269,12 +267,12 @@ body{
     gap: 30px;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 
 .skills-list {
-    width: 45%;
-    height: 80px;
+    width: 40%;
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -287,7 +285,7 @@ body{
 .skills-content p{
     font-size: 1.2rem;
     font-weight: bold;
-    color: #00000069;
+    color: #151212;
     margin: 0;
 }
 
