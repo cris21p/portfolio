@@ -510,7 +510,7 @@ body{
 .project-description h4 {
     text-align: left;
     text-decoration: underline;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     margin-top: 10px;
     margin-bottom: 25px;
 }
@@ -548,8 +548,6 @@ body{
     height: 30px;
     margin-top: 20px;
     margin-bottom: 10px;
-    border: 1px solid #007bff;
-
 }
 
 .project-links a {
