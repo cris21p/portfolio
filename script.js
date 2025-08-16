@@ -1,0 +1,1 @@
+https://api.screenshotmachine.com/?key=b31910&url=https://movie-app-alpha-jet.vercel.app/&dimension=800x600
