@@ -34,13 +34,13 @@ body{
 
 .container-nav{
     display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 100%;
 }
 
 .logo {
     display: flex;
-    direction: ltr;
     width: 30%;
     height: 100%;
     align-items: center;
@@ -50,8 +50,13 @@ body{
     color: #b6ded6d8;
 }
 
+.logo a{
+    text-decoration: none;
+}
+
 .logo p{
     margin: 0;
+    font-size: clamp(1.3rem, 2vw, 1rem);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     font-style: italic;
@@ -59,10 +64,9 @@ body{
 
 .nav{
     display: flex;
-    direction: rtl;
-    width: 70%;
+    width: 50%;
     height: 100%;
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: clamp(1.1rem, 2vw, 1rem);
     justify-content: center;
     align-items: center;
 }
